@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -72,4 +73,10 @@ class prims {
  
         t.primMST(graph);
     }
+=======
+class prims {
+    public static void main(String args[]) {
+        System.out.println("Hello World");
+    }
+>>>>>>> 1d2a2639094de7cded95d2f33d785965a608240a
 }
