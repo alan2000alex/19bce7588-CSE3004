@@ -15,7 +15,7 @@ public class naiveBet {
         int[] upper = new int[no_of_segments];
 
         System.out.println("Enter segment ranges: ");
-        for(int i = 0; i < no_of_segments; i++) {
+        for (int i = 0; i < no_of_segments; i++) {
             str = in.nextLine();
             sp = str.split(" ");
             lower[i] = Integer.parseInt(sp[0]);
@@ -24,23 +24,23 @@ public class naiveBet {
 
         int[] points = new int[no_of_points];
         System.out.println("Enter the points: ");
-        
-        for(int i = 0; i < no_of_points; i++)
+
+        for (int i = 0; i < no_of_points; i++)
             points[i] = in.nextInt();
         in.close();
         int[] contains = new int[no_of_points];
         Arrays.fill(contains, 0);
 
-        for(int i = 0; i < no_of_points; i++){
-            for(int j = 0; j < no_of_segments; j++) {
-                if(points[i] >= lower[j] && points[i] <= upper[j]){
+        for (int i = 0; i < no_of_points; i++) {
+            for (int j = 0; j < no_of_segments; j++) {
+                if (points[i] >= lower[j] && points[i] <= upper[j]) {
                     contains[i]++;
                 }
             }
         }
 
         System.out.println("Count array: ");
-        for(int i = 0; i < no_of_points; i++)
-            System.out.print(contains[i]+" ");
+        for (int i = 0; i < no_of_points; i++)
+            System.out.print(contains[i] + " ");
     }
 }
